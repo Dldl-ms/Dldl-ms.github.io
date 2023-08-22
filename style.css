@@ -149,12 +149,12 @@ ul li a{
         top: 0px;
     }
     .content .text{
-        margin-top: 20vh;
+        margin-top: 5vh;
         font-size: small;
     }
     .content .image img{
-        width: 150px;
-        margin-top: 0px;
+        width: 200px;
+        margin-top: 70px;
         position: relative; 
         top: -30%;
     }
