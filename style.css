@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, "Times New Roman", Times, serif;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(#000000c9, #1b1a1ae3);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #008cff;
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 80%);
+}
+.container{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+.container nav{
+    color:#fff ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.container nav .logo{
+    background: #008cff15;
+    color: white;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 5px;
+    letter-spacing: 3px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma, sans-serif;
+}
+.container nav ul li {
+    display: inline-block;
+    color: #ffffff;
+    margin: 5px 15px;
+    background: #008cff15;
+    border-radius: 2px;
+    margin: 6px;
+}
+ul li a{
+    color: #fff;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+.container nav ul li:hover{
+    background: #0073ff1e;
+}
+.container nav .logo:hover{
+    background: #0073ff1e;
+}
+.content .text{
+    margin: 5px 15px;
+    font-size: large;
+    font-family:  serif,  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+.content .image {
+    width: 40%;
+}
+
+.content .image img{
+    width: 400px;
+}
+.content .text h1{
+    color: rgb(201, 201, 201);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.content .text{
+    color: #ffffffe4;
+    width: 40%;
+}
+.content .text p{
+    color: #ffffffe4;
+    size: 20px;
+    line-height:25px;
+}
+.menu {
+    opacity: 0;
+    pointer-events: none;
+}
+.text p a{
+    color: #fff;
+
+    font-family: 'Rubik', sans-serif;
+}
+.ar{
+    font-family: 'Rubik', sans-serif;
+}
+
+@media (min-width:950px) and (max-width:1150px){
+    .content .image img{
+        width: 320px;
+    }
+    .menu {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+@media (max-width:950px) {
+    .content .image img{
+        width: 300px;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content .text, .content .image{
+        width: 80%;
+    }
+    body::after{
+        clip-path: circle(50% at bottom);
+    }
+    .menu {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+@media (max-width:600px) {
+
+
+    .container nav .logo{
+        position: absolute;
+        top: 0px;
+    }
+    .content .text{
+        margin-top: 40px;
+        font-size: medium;
+    }
+    .content .image img{
+        width: 250px;
+        margin-top: 0px;
+        position: relative; 
+        top: -30%;
+    }
+}
+@media (max-width: 350px) {
+    .content .text{
+        font-size: small;
+    }
+    .image img{
+        width: 200px !important ;
+    }
+}
+@media (max-width:3000px) and (min-width:1450px){
+    .content .text p{
+        font-size: 20;
+    }
+    .content .image img{
+        width: 450;
+    }
+}
