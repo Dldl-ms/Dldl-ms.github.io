@@ -150,7 +150,10 @@ ul li a{
     }
     .content .text{
         margin-top: 40px;
-        font-size: medium;
+        font-size: small;
+    }
+    .content{
+        height:70%;
     }
     .content .image img{
         width: 250px;
