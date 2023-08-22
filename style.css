@@ -149,11 +149,8 @@ ul li a{
         top: 0px;
     }
     .content .text{
-        margin-top: 60px;
+        margin-top: 40vh;
         font-size: small;
-    }
-    .content{
-        height:70%;
     }
     .content .image img{
         width: 250px;
@@ -175,6 +172,6 @@ ul li a{
         font-size: 20;
     }
     .content .image img{
-        width: 450;
+        width: 150;
     }
 }
