@@ -168,7 +168,7 @@ ul li a{
     }
 }
 
-@media (max-height:740px) {
+@media (max-height:740px) and (max-width:420px){
     .content .text h1{
         opacity: 0;
         pointer-events: none
