@@ -160,16 +160,9 @@ ul li a{
     }
 }
 @media (max-width: 350px) {
-    .content .text{
-        font-size: small;
-    }
+
     .image img{
         width: 150px !important ;
     }
 }
 
-@media (max-height:740px) and (max-width:420px){
-    .content .text h1{
-        opacity: 0;
-        pointer-events: none
-}}
