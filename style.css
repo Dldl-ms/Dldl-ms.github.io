@@ -168,3 +168,8 @@ ul li a{
     }
 }
 
+@media (max-height:740px) {
+    .content .text h1{
+        opacity: 0;
+        pointer-events: none
+}}
