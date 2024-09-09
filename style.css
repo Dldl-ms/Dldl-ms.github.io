@@ -112,6 +112,7 @@ ul li a{
 }
 .ar{
     font-family: 'Rubik', sans-serif;
+    line-height: 150%;
 }
 
 @media (min-width:950px) and (max-width:1150px){
